@@ -4,14 +4,10 @@ import '/components/appointment_empty/appointment_empty_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'services_model.dart';
 export 'services_model.dart';
 
@@ -329,8 +325,7 @@ class _ServicesWidgetState extends State<ServicesWidget>
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        listViewCarAppointmentsRecord!
-                                                            .type,
+                                                        listViewCarAppointmentsRecord.type,
                                                         style: FlutterFlowTheme
                                                                 .of(context)
                                                             .bodySmall
@@ -349,8 +344,7 @@ class _ServicesWidgetState extends State<ServicesWidget>
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          listViewCarAppointmentsRecord!
-                                                              .carName,
+                                                          listViewCarAppointmentsRecord.carName,
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .titleMedium,
@@ -366,8 +360,7 @@ class _ServicesWidgetState extends State<ServicesWidget>
                                                                     0.0),
                                                         child: Text(
                                                           formatNumber(
-                                                            listViewCarAppointmentsRecord!
-                                                                .appointmentNumber,
+                                                            listViewCarAppointmentsRecord.appointmentNumber,
                                                             formatType:
                                                                 FormatType
                                                                     .decimal,
@@ -441,8 +434,7 @@ class _ServicesWidgetState extends State<ServicesWidget>
                                                   .fromSTEB(
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
-                                                listViewCarAppointmentsRecord!
-                                                    .status,
+                                                listViewCarAppointmentsRecord.status,
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodySmall,
@@ -456,8 +448,7 @@ class _ServicesWidgetState extends State<ServicesWidget>
                                             child: Text(
                                               dateTimeFormat(
                                                   'relative',
-                                                  listViewCarAppointmentsRecord!
-                                                      .scheduledDate!),
+                                                  listViewCarAppointmentsRecord.scheduledDate!),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium,
